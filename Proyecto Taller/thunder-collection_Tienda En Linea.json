@@ -1,0 +1,130 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Tienda En Linea",
+    "dateExported": "2024-02-23T16:26:58.521Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "324adad2-6a3c-4819-8e08-2d4806372db6",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-02-23T10:49:54.319Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c0125447-eb43-440f-a967-fcf305d7cdf5",
+            "colId": "dcac746d-d698-4240-96b7-f54395f5f769",
+            "containerId": "324adad2-6a3c-4819-8e08-2d4806372db6",
+            "name": "register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-23T10:50:35.881Z",
+            "modified": "2024-02-23T11:23:03.383Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Melanie"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Roquel"
+                    },
+                    {
+                        "name": "email",
+                        "value": "meRoque@gmail.com "
+                    },
+                    {
+                        "name": "username",
+                        "value": "MeRoquel"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e6efb2b-bb95-45eb-8f9b-869f119c4c7f",
+            "colId": "dcac746d-d698-4240-96b7-f54395f5f769",
+            "containerId": "324adad2-6a3c-4819-8e08-2d4806372db6",
+            "name": "login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-23T11:24:07.814Z",
+            "modified": "2024-02-23T11:29:29.959Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "MeRoquel"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b36baf03-19f2-4e97-9482-fef815997647",
+            "colId": "dcac746d-d698-4240-96b7-f54395f5f769",
+            "containerId": "324adad2-6a3c-4819-8e08-2d4806372db6",
+            "name": "update",
+            "url": "/update/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-23T15:16:32.393Z",
+            "modified": "2024-02-23T15:24:34.201Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8dc570d8-48de-4c7f-811f-c30b6e6ee35f",
+            "colId": "dcac746d-d698-4240-96b7-f54395f5f769",
+            "containerId": "324adad2-6a3c-4819-8e08-2d4806372db6",
+            "name": "delete",
+            "url": "/delete/",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-23T15:58:03.020Z",
+            "modified": "2024-02-23T15:58:55.973Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
